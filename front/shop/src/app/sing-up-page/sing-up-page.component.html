@@ -1,0 +1,43 @@
+<div class="body-block">
+    
+    <div class="main">
+        <div class="login-block">
+            <div class="wrapper">
+                <form>
+                    <div class="form__header">
+                    <p class="logo_text">
+                        The infamous shop
+                    </p>
+                    <div class="triangle"></div>
+                    </div>
+                    
+                    <div class="form__body">
+                    <p class="title">
+                        Get Started Absolutely
+                        <span>disreputable</span>
+                    </p>
+                    <p class="description">No Mind Required.</p>
+
+                    <input type="text" [(ngModel)]="username" placeholder="Name" name="inpUserName"/>
+                    <input type="email" [(ngModel)]="email" placeholder="Email Address" name="inpEmail"/>
+                    <input type="password" [(ngModel)]="password" placeholder="Create a Password" name="inpPassword"/>
+
+                    <button type="button" (click)="registerNewUser()" [disabled]="btnDisabled" >Sign Up</button>
+                    </div>
+                </form>
+                
+                <div class="login">
+                    <p>Already have an account?
+                    <a href="login">Login</a>
+                    </p>
+                </div>
+                
+                </div>
+
+        </div>
+    </div>
+
+    <footer class="footer">footer</footer>
+
+</div>
+

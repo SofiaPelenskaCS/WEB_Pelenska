@@ -1,0 +1,31 @@
+<div class="body-block">
+    <app-nav-bar></app-nav-bar>
+
+    <div class="main">
+        <div class="wrapper">
+            <ul class="wrapper__menu-ul">
+                <li><a href="#1">Personal info</a>
+                    <li>Username: <input type="text" [(ngModel)]="username" placeholder="Name"></li>
+                    <li>email: <input type="email" [(ngModel)]="email" placeholder="Email" disabled="true"></li>
+                    <li>NEW password: <input type="text" [(ngModel)]="password" placeholder="NEW Password"></li>
+                    <li>Уси: </li>
+                    <li>Лапи: </li>
+                    <li>Хвост: 
+                </li>
+                <li>
+                    <a href="#2">Orders</a>
+                    <li>None
+                </li>
+                <li>
+                    <a href="#3">Docs</a>
+                </li>
+            </ul>
+            <div class="buttons-block">
+                <button class="btn-submin" (click)="patchUser()">Submit</button>
+                <button class="btn-delete" (click)="deleteUser()" >Delete myself</button>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">footer</footer>
+
+</div>
